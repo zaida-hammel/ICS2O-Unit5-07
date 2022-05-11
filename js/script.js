@@ -17,5 +17,13 @@ if (navigator.serviceWorker) {
  * This function does multiplication.
  */
 function myButtonClicked () {
-  
+  const counter = parseInt(document.getElementById("counter").value);
+  let sum = 0;
+    
+    for (let addedInteger = 1; addedInteger <= counter; addedInteger++) {
+      sum += addedInteger;
+    }
+            
+  document.getElementById("answers").innerHTML = 
+    "The sum is: " + sum;
 }
